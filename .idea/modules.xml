@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/context/book/book.iml" filepath="$PROJECT_DIR$/context/book/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/context/context.iml" filepath="$PROJECT_DIR$/context/context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/context/book/domain/domain.iml" filepath="$PROJECT_DIR$/context/book/domain/domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/context/book/domain/src/main/main.iml" filepath="$PROJECT_DIR$/context/book/domain/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/context/book/primary-adapter/primary-adapter.iml" filepath="$PROJECT_DIR$/context/book/primary-adapter/primary-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/context/book/primary-adapter/src/main/rest/rest.iml" filepath="$PROJECT_DIR$/context/book/primary-adapter/src/main/rest/rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/context/book/secondary-adapter/secondary-adapter.iml" filepath="$PROJECT_DIR$/context/book/secondary-adapter/secondary-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/context/book/primary-adapter/src/main/rest/spring-web-service/spring-web-service.iml" filepath="$PROJECT_DIR$/context/book/primary-adapter/src/main/rest/spring-web-service/spring-web-service.iml" />
+    </modules>
+  </component>
+</project>
