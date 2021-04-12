@@ -16,10 +16,10 @@ class BooksController {
     @Autowired
     private lateinit var database: InMemoryBooksDatabase
 
-    @RequestMapping("", method = arrayOf(RequestMethod.GET))
+    @RequestMapping("/books", method = arrayOf(RequestMethod.GET))
     fun books() = database.getBooks()
 
-    @RequestMapping("", method = [RequestMethod.POST])
+    @RequestMapping("/book", method = [RequestMethod.POST])
     fun addBook(@RequestBody book: Book) =
         if (database.addBook(book)) book
         else throw DuplicateItemException()
