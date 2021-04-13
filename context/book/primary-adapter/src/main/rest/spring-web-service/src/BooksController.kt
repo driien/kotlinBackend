@@ -5,9 +5,6 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RestController
-import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.src.main.kotlin.Book
-import si.dime.kotlin.tutorials.rest.booklibrary.book.secondaryAdapter.composite.InMemoryBooksDatabase
-import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.DuplicateItemException
 
 @RestController
 class BooksController {

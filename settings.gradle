@@ -1,2 +1,5 @@
 rootProject.name = 'projectKotlin'
 
+include("context:book:domain")
+include("context:book:primary-adapter")
+include("context:book:secondary-adapter")
