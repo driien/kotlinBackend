@@ -10,12 +10,27 @@ allprojects {
     apply(plugin = "kotlin")
     repositories {
         mavenCentral()
+        maven { setUrl ("https://jitpack.io")}
     }
 }
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
+
+    //Axon framework
+    implementation("org.axonframework:axon-spring-boot-starter:4.3.2") {
+        exclude(group = "org.axonframework", module = "axon-server-connector")
+    }
+    implementation("org.axonframework.extensions.tracing:axon-tracing-spring-boot-starter:4.3")
+
+    //CQRS
+    implementation("com.github.kotato:KAxon-CQRS:0.0.10")
+
+    //Test
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+
+
 }
+

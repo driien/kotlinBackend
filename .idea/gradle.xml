@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/context" />
             <option value="$PROJECT_DIR$/context/book" />
             <option value="$PROJECT_DIR$/context/book/domain" />
+            <option value="$PROJECT_DIR$/context/book/interaction" />
             <option value="$PROJECT_DIR$/context/book/primary-adapter" />
             <option value="$PROJECT_DIR$/context/book/secondary-adapter" />
           </set>

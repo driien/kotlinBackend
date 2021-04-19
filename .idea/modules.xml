@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/library-source/comand-query/comand-query.iml" filepath="$PROJECT_DIR$/library-source/comand-query/comand-query.iml" />
-      <module fileurl="file://$PROJECT_DIR$/context/book/interaction/interaction.iml" filepath="$PROJECT_DIR$/context/book/interaction/interaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-source/library-source.iml" filepath="$PROJECT_DIR$/library-source/library-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/context/book/domain/src/main/main.iml" filepath="$PROJECT_DIR$/context/book/domain/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/context/book/primary-adapter/src/main/rest/rest.iml" filepath="$PROJECT_DIR$/context/book/primary-adapter/src/main/rest/rest.iml" />
