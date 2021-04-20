@@ -105,6 +105,14 @@ modules.xml
 *.tar.gz
 *.rar
 
+build
+context/build
+context/book/build
+context/book/domain/build
+context/book/interaction/build
+context/book/primary-adapter/build
+context/book/secondary-adapter/build
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
