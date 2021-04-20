@@ -1,1 +1,0 @@
-/Users/adrian/IdeaProjects/projectKotlin/build/classes/kotlin/main/si/dime/kotlin/tutorials/rest/booklibrary/App.class:/Users/adrian/IdeaProjects/projectKotlin/build/classes/kotlin/main/si/dime/kotlin/tutorials/rest/booklibrary/AppKt.class:/Users/adrian/IdeaProjects/projectKotlin/build/classes/kotlin/main/si/dime/kotlin/tutorials/rest/booklibrary/HelloSpringBootController.class
