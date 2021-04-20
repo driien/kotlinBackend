@@ -1,8 +1,12 @@
 package si.dime.kotlin.tutorials.rest.booklibrary.book.interaction
 
+import org.axonframework.queryhandling.QueryHandler
+import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.Book
+import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.search.BookSearcher
+import javax.inject.Named
 
 class SearchBookQuery
-/*
+
 @Named
 open class SearchBookQueryHandler(private val searcher: BookSearcher) {
     @QueryHandler
@@ -21,7 +25,7 @@ private fun List<Book>.toResult() =
         )
     }
         .let { SearchBookQueryResult(it) }
-*/
+
 data class SearchBookQueryResult(val book: List<SearchBookQueryResultBook>)
 
 data class SearchBookQueryResultBook(

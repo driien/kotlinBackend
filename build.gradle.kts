@@ -12,11 +12,19 @@ allprojects {
         mavenCentral()
         maven { setUrl ("https://jitpack.io")}
     }
+
+    dependencies {
+        implementation("javax.inject:javax.inject:1")
+    }
+
 }
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
+
+    //JavaX
+    implementation("javax.transaction:javax.transaction-api:1.3")
 
     //Axon framework
     implementation("org.axonframework:axon-spring-boot-starter:4.3.2") {

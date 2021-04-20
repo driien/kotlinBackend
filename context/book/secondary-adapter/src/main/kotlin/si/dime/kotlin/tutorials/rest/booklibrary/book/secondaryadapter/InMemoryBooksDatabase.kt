@@ -1,8 +1,8 @@
 package si.dime.kotlin.tutorials.rest.booklibrary.book.secondaryadapter
 
 import org.springframework.stereotype.Component
-import si.dime.kotlin.tutorials.rest.booklibrary.book
-//import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.BookRepository
+import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.Book
+import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.BookRepository
 import javax.annotation.PostConstruct
 
 @Component
