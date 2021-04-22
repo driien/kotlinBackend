@@ -4,3 +4,14 @@ include("context:book:domain")
 include("context:book:primary-adapter")
 include("context:book:secondary-adapter")
 include("context:book:interaction")
+include 'context:book:primary-adapter:rest'
+findProject(':context:book:primary-adapter:rest')?.name = 'rest'
+include 'library-source'
+include 'library-source:fp'
+findProject(':library-source:fp')?.name = 'fp'
+include 'commandquery'
+include 'library-source:command-query'
+findProject(':library-source:command-query')?.name = 'command-query'
+include 'context:book:primary-adapter:rest:spring-web-mvc'
+findProject(':context:book:primary-adapter:rest:spring-web-mvc')?.name = 'spring-web-mvc'
+

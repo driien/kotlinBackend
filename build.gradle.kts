@@ -15,12 +15,13 @@ allprojects {
 
     dependencies {
         implementation("javax.inject:javax.inject:1")
+        implementation("org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE")
+
     }
 
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
     //JavaX
