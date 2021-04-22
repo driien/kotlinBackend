@@ -6,7 +6,7 @@ dependencies {
     //Project implementation
     implementation(project(":context:book:domain"))
 
-    //Springboot framework
+    //Spring framework
     implementation("org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE")
 
     //Axon framework
