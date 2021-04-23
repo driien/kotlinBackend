@@ -34,6 +34,8 @@ allprojects {
 }
 
 dependencies {
+    implementation(project(":library-source:command-query"))
+
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("javax.transaction:javax.transaction-api:1.3")
     implementation("org.axonframework:axon-spring-boot-starter:4.3.2") {
@@ -41,6 +43,8 @@ dependencies {
     }
     implementation("org.axonframework.extensions.tracing:axon-tracing-spring-boot-starter:4.3")
     implementation("com.github.kotato:KAxon-CQRS:0.0.10")
+    implementation("io.arrow-kt:arrow-core:0.11.0")
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
 }
