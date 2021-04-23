@@ -1,6 +1,7 @@
 package si.dime.kotlin.tutorials.rest.booklibrary.librarysource.commandquery.query
 
 import arrow.core.Either
+import si.dime.kotlin.tutorials.rest.booklibrary.librarysource.fp.catch
 
 import kotlin.reflect.KClass
 
