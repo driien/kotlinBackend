@@ -1,4 +1,4 @@
-package si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter.rest.create
+package si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter.create
 
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

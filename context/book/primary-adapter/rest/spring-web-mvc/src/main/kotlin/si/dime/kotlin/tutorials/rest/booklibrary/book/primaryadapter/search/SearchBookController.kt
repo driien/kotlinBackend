@@ -1,18 +1,21 @@
-package si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter.rest.search
+package si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter.search
 
+import arrow.core.Either
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.Book
 import si.dime.kotlin.tutorials.rest.booklibrary.book.interaction.SearchBookQuery
 import si.dime.kotlin.tutorials.rest.booklibrary.book.interaction.SearchBookQueryResult
-import si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter.rest.BookDocument
+import si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter.BookDocument
 import si.dime.kotlin.tutorials.rest.booklibrary.librarysource.commandquery.query.QueryBus
 import si.dime.kotlin.tutorials.rest.booklibrary.librarysource.commandquery.query.execute
 
 @RestController
-class BooksController (private val queryBus: QueryBus){
+class BookController (private val queryBus: QueryBus) {
 
     @GetMapping("/api-books")
+    fun searchBookControllerTest():String = "Your on SEARCH BOOK controller"
+
     fun search(): BookDocument {
         return searchBook().fold(
             { throw it },
@@ -20,7 +23,8 @@ class BooksController (private val queryBus: QueryBus){
         )
     }
 
-    private fun searchBook() = queryBus.execute<SearchBookQueryResult>(SearchBookQuery())
+
+    private fun searchBook(): Either<Throwable, SearchBookQueryResult> = queryBus.execute<SearchBookQueryResult>(SearchBookQuery())
 
     private fun SearchBookQueryResult.toResult() =
         BookDocument(

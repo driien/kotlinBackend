@@ -35,6 +35,7 @@ allprojects {
 
 dependencies {
     implementation(project(":library-source:command-query"))
+    implementation(project(":context:book:primary-adapter:rest:spring-web-mvc"))
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("javax.transaction:javax.transaction-api:1.3")

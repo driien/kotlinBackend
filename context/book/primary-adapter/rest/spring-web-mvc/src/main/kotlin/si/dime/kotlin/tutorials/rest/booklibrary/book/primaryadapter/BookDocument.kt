@@ -1,4 +1,4 @@
-package si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter.rest
+package si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter
 
 import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.Book
 
