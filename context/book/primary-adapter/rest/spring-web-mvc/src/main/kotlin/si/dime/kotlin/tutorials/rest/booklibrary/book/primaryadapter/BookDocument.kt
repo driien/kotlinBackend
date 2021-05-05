@@ -1,5 +1,11 @@
 package si.dime.kotlin.tutorials.rest.booklibrary.book.primaryadapter
 
-import si.dime.kotlin.tutorials.rest.booklibrary.book.domain.Book
 
-data class BookDocument (val data: List<Book>)
+data class BookDocument (val data: List<BookData>)
+
+data class BookData(
+    val isbn: String,
+    val title: String,
+    val author: String,
+    val coverURL: String?
+)

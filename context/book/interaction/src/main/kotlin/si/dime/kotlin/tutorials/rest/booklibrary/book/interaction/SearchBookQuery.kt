@@ -18,10 +18,10 @@ open class SearchBookQueryHandler(private val searcher: BookSearcher) {
 private fun List<Book>.toResult() =
     this.map { book ->
         SearchBookQueryResultBook(
-            ISBN = book.ISBN,
-            title = book.title,
-            author = book.author,
-            coverURL = book.coverURL
+            ISBN = book.isbn.toString(),
+            title = book.title.toString(),
+            author = book.author.toString(),
+            coverURL = book.coverURL.toString()
         )
     }
         .let { SearchBookQueryResult(it) }
