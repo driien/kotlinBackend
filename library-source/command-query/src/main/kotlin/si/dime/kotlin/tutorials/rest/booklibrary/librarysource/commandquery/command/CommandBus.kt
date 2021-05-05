@@ -7,6 +7,7 @@ interface CommandBus {
     fun <C> execute(command: C)
     fun <C, R : Any> execute(command: C, responseType: KClass<R>): R
     fun <C, R> failureOrSuccess(command: C): Either<Throwable, R>
+    fun <C, R, E> safeExecute(command: C): Either<E, R>
 }
 
 @Suppress("EXTENSION_SHADOWED_BY_MEMBER")

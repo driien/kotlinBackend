@@ -29,12 +29,12 @@ allprojects {
     dependencies {
         implementation("javax.inject:javax.inject:1")
         implementation("org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE")
-
     }
 }
 
 dependencies {
     implementation(project(":library-source:command-query"))
+    implementation(project(":library-source:fp"))
     implementation(project(":context:book:primary-adapter:rest:spring-web-mvc"))
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
