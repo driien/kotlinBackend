@@ -1,6 +1,6 @@
 package si.dime.kotlin.tutorials.rest.booklibrary.book.domain
 
 interface BookRepository {
-    fun getBooks(): MutableList<Book>
-    fun addBook(book: Book): Boolean
+    fun getBooks(): List<Book>
+    fun save(book: Book): Boolean
 }

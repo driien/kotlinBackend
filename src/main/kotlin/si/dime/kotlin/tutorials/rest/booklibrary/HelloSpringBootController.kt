@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController
 class HelloSpringBootController {
 
     @RequestMapping("/hello")
-    fun helloSpringBoot() = "Hello SpringBoot\n /books to see allBooks"
+    fun helloSpringBoot():String  = "Hello SpringBoot\n /api-books to see allBooks"
 
 }
